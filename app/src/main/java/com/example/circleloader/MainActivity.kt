@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity(),SeekBar.OnSeekBarChangeListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         proSeek.setOnSeekBarChangeListener(this)
         thickSeek.setOnSeekBarChangeListener(this)
         thickSeek.setProgress(30)

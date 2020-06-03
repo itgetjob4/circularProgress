@@ -1,0 +1,39 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.example.circleprogress'
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                groupId 'com.example.circleprogress'
+                artifactId 'circleprogress'
+                name 'circularProg'
+                description 'To show circular progress'
+                url 'https://github.com/itgetjob4/circularProgress'
+
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+
+                developers {
+                    developer {
+                        id 'itgetjob4' //YOUR ID
+                        name 'intelli sense' //YOUR NAME
+                        email 'itgetjobs4@gmail.com' //YOUR EMAIL
+                    }
+                }
+
+                scm {
+                    connection 'https://github.com/itgetjob4/circularProgress.git' // YOUR GIT REPO
+                    developerConnection 'https://github.com/itgetjob4/circularProgress.git' // YOUR GIT REPO
+                    url 'https://github.com/itgetjob4/circularProgress' // YOUR SITE
+                }
+            }
+        }
+    }
+}

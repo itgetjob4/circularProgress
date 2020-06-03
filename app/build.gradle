@@ -36,5 +36,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     implementation "androidx.recyclerview:recyclerview:1.1.0"
-    implementation project(":circleprogress")
+//    implementation 'com.example.circleprogress:circleprogress:1.0.0'
+    implementation 'com.github.itgetjob4:circularProgress:1.0'   // need jitpack in project level build
+//    implementation project(":circleprogress")
 }
