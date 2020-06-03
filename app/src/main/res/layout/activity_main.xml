@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+   
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/circle_progressLay"
+       android:gravity="center"
+       android:padding="10dp"
+       app:layout_constraintBottom_toTopOf="@+id/swithText"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+
+      <com.example.circleprogress.CircleProgressBar
+          android:layout_width="wrap_content"
+          app:progressBarThickness="80dp"
+          android:id="@+id/circle_progress"
+          android:layout_height="wrap_content"
+          app:max="100"
+          app:progress="60"
+          app:strokeCap="round" />
+   </LinearLayout>
+
+   <TextView
+       android:id="@+id/progressVal"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="60"
+       android:textSize="17sp"
+       app:layout_constraintBottom_toBottomOf="@+id/circle_progressLay"
+       app:layout_constraintEnd_toEndOf="@+id/circle_progressLay"
+       app:layout_constraintStart_toStartOf="@+id/circle_progressLay"
+       app:layout_constraintTop_toTopOf="@+id/circle_progressLay" />
+
+   <!--   <TextView-->
+   <!--       android:layout_width="wrap_content"-->
+   <!--       android:layout_height="wrap_content"-->
+   <!--       android:text="Max: "-->
+   <!--       android:id="@+id/maxText"-->
+   <!--       app:layout_constraintTop_toBottomOf="@+id/circle_progressLay"-->
+   <!--       android:layout_marginTop="20dp"-->
+   <!--       android:layout_marginStart="10dp"-->
+   <!--       android:textSize="18sp"-->
+   <!--       app:layout_constraintStart_toStartOf="parent"/>-->
+
+   <!--   <SeekBar-->
+   <!--       android:layout_width="0dp"-->
+   <!--       android:layout_height="wrap_content"-->
+   <!--       android:id="@+id/maxProSeek"-->
+   <!--       app:layout_constraintStart_toEndOf="@+id/maxText"-->
+   <!--       app:layout_constraintEnd_toEndOf="parent"-->
+   <!--       android:max="200"-->
+   <!--       android:progress="100"-->
+   <!--       app:layout_constraintTop_toTopOf="@+id/maxText"-->
+   <!--       app:layout_constraintBottom_toBottomOf="@+id/maxText"-->
+   <!--       android:layout_marginEnd="5dp"-->
+   <!--       android:layout_marginStart="5dp"/>-->
+
+   <TextView
+       android:id="@+id/swithText"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Round Edges: "
+       android:layout_marginBottom="15dp"
+       android:textSize="18sp"
+       app:layout_constraintBottom_toTopOf="@+id/proText"
+       app:layout_constraintStart_toStartOf="@+id/proText" />
+   <Switch
+       android:layout_width="wrap_content"
+       android:layout_marginStart="5dp"
+       android:id="@+id/edgeSwitch"
+       android:checked="true"
+       app:layout_constraintStart_toEndOf="@+id/swithText"
+       app:layout_constraintTop_toTopOf="@+id/swithText"
+       app:layout_constraintBottom_toBottomOf="@+id/swithText"
+       android:layout_height="wrap_content"/>
+
+   <TextView
+       android:id="@+id/proText"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Progress: "
+       android:layout_marginBottom="15dp"
+       android:textSize="18sp"
+       app:layout_constraintBottom_toTopOf="@+id/thickText"
+       app:layout_constraintStart_toStartOf="@+id/thickText" />
+
+   <SeekBar
+       android:id="@+id/proSeek"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="5dp"
+       android:layout_marginEnd="5dp"
+       android:progress="60"
+       app:layout_constraintBottom_toBottomOf="@+id/proText"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toEndOf="@+id/proText"
+       app:layout_constraintTop_toTopOf="@+id/proText" />
+
+   <TextView
+       android:id="@+id/thickText"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="10dp"
+       android:layout_marginBottom="15dp"
+       android:text="Thickness: "
+       android:textSize="18sp"
+       app:layout_constraintBottom_toTopOf="@+id/colorText"
+       app:layout_constraintStart_toStartOf="parent" />
+
+   <SeekBar
+       android:id="@+id/thickSeek"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="5dp"
+       android:layout_marginEnd="5dp"
+       android:progress="30"
+       android:max="100"
+       app:layout_constraintBottom_toBottomOf="@+id/thickText"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toEndOf="@+id/thickText"
+       app:layout_constraintTop_toTopOf="@+id/thickText" />
+
+   <TextView
+       android:id="@+id/colorText"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="10dp"
+       android:layout_marginTop="15dp"
+       android:layout_marginBottom="10dp"
+       android:text="Color: "
+       android:textSize="18sp"
+       app:layout_constraintBottom_toTopOf="@+id/colorRecycle"
+       app:layout_constraintStart_toStartOf="parent" />
+
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/colorRecycle"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:paddingTop="4dp"
+       android:paddingBottom="4dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

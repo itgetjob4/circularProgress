@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleProgressBar">
+        <attr name="min" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="progress" format="integer" />
+        <attr name="color" format="color" />
+        <attr name="progressBarThickness" format="dimension" />
+        <attr name="strokeCap" format="enum">
+            <enum name="round" value="0"/>
+            <enum name="square" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

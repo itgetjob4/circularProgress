@@ -1,0 +1,3 @@
+rootProject.name='CircleLoader'
+include ':app'
+include ':circleprogress'
