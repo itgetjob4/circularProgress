@@ -24,12 +24,12 @@ implementation 'com.example.circleprog:circleprogress:1.0.0'
 
 <h3>Also you can do the modifications in run time, by following functions: </h3>
 
- setProgress(progress:Int)
- setMax(max:Int)
- setColor(color:Int)
- setThickness(strWidth:Float)
- setRoundCap()
- setSquareCap()
+ setProgress(progress:Int)</br>
+ setMax(max:Int)</br>
+ setColor(color:Int)</br>
+ setThickness(strWidth:Float)</br>
+ setRoundCap()</br>
+ setSquareCap()</br>
 
     
 
