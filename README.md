@@ -10,7 +10,7 @@ implementation 'com.example.circleprog:circleprogress:1.0.0'
 
 <h2>How to use:</h2>
 
-<h3>Simply Define in your xml file</h3>
+<h3>Simply Define it in your xml file</h3>
 
           <com.example.circleprogress.CircleProgressBar
           android:layout_width="wrap_content"
