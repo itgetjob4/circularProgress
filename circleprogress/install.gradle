@@ -1,13 +1,13 @@
 apply plugin: 'com.github.dcendents.android-maven'
 
-group = 'com.example.circleprogress'
+group = 'com.example.circleprog'
 
 install {
     repositories.mavenInstaller {
         pom {
             project {
                 packaging 'aar'
-                groupId 'com.example.circleprogress'
+                groupId 'com.example.circleprog'
                 artifactId 'circleprogress'
                 name 'circularProg'
                 description 'To show circular progress'

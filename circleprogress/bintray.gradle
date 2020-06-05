@@ -32,7 +32,7 @@ bintray {
 
     pkg {
         repo = 'CircleProgress'
-        name = 'com.example.circleprogress'
+        name = 'com.example.circleprog'
         configurations = ['archives']
         desc = 'Android library to show circular progress'
         websiteUrl = 'https://github.com/itgetjob4/circularProgress'

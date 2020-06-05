@@ -20,11 +20,12 @@
 
       <com.example.circleprogress.CircleProgressBar
           android:layout_width="wrap_content"
-          app:progressBarThickness="80dp"
-          android:id="@+id/circle_progress"
           android:layout_height="wrap_content"
+          android:id="@+id/circle_progress"
           app:max="100"
           app:progress="60"
+          app:color="@color/color6"
+          app:progressBarThickness="80dp"
           app:strokeCap="round" />
    </LinearLayout>
 
