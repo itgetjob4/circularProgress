@@ -2,7 +2,7 @@
 This library is used to do circular loading with progress, it is best suitable where you want to show some progress with circular loading like while downloading files.
 <h2>Have a look to the demonstration</h2>
         
-<img src="https://ibb.co/hWjY6D9" width="400">
+<img src="https://img.techpowerup.org/200605/screenshot-20200604-164241.jpg" width="400">
 
 <h3>To include:</h3>
 
